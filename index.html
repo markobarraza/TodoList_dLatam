@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio | To do list</title>
+    <!-- Google font | Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="todolist_container">
+            <h1>Todo List</h1>
+            <hr>
+            <p class="nueva_tarea">Nueva tarea</p>
+
+            <!-- input para escribir tarea -->
+            <input id="agregarTarea" class="input_tarea" type="text">
+            <!-- Boton agregar tarea -->
+            <button id="btn_agregar" class="btn_agregar">Agregar</button>
+
+            <div class="container_info">
+
+                <div class="container_left">
+                    <p class="total">Total: <span id="total_tareas">0</span> </p>
+                    <p class="realizadas">Realizadas: <span id="realizadas_tareas">0</span> </p>
+                </div>
+                
+                <div class="container_right">
+
+                    <table border="solid">
+                        <thead>
+
+                            <th>id</th>
+                            <th>Tarea</th>
+                            
+
+                        </thead>
+                        <tbody>
+                            
+                            
+                            
+                            
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+ 
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
