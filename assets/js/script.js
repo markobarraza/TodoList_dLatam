@@ -5,7 +5,11 @@ const total = document.getElementById("total_tareas")
 const realizadas = document.getElementById("realizadas_tareas")
 
 // arreglo vacio
-const tareas = []
+const tareas = [
+    {id: 234, nombre:"Compras supermercado", notificado: false},
+    {id: 232, nombre:"limpieza casa", notificado: false},
+    {id: 254, nombre:"Reparar auto", notificado: false},
+]
 
 
 // FUNCION QUE CREA EL RENDER
@@ -25,10 +29,9 @@ const renderTareas = () =>{
         `
     })
     tbody.innerHTML = html
-    total.innerHTML = tareas.length
-    
-    
+    total.innerHTML = tareas.length  
 } 
+
 
 // FUNCION QUE VE SI EL CHECK BOX ESTA SELECCIONADO O NO
 const actualizar = (id) =>{
@@ -58,7 +61,7 @@ btnAgregar.addEventListener( "click", () => {
 
 })
 
-
+renderTareas()
 
 
 
